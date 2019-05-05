@@ -21,15 +21,20 @@ import java.util.concurrent.TimeUnit;
 @BenchmarkMode(Mode.Throughput)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @Fork(value = 1)
-@Threads(50)
-@Warmup(iterations = 10)
-@Measurement(iterations = 20)
+@Threads(8)
+@Warmup(iterations = 5, time = 5)
+@Measurement(iterations = 5, time = 5)
 @Microbenchmark
 public class YaviBenchmark {
 
     @Benchmark
-    public void bench(MainState state) throws Exception {
-        state.run(new Message(""));
+    public void simpleValid(MainState state) throws Exception {
+        state.run(new UserForm("John Doe", "john@example.com", 30));
+    }
+
+    @Benchmark
+    public void simpleInvalid(MainState state) throws Exception {
+        state.run(new UserForm("", "", 0));
     }
 
     @State(Scope.Benchmark)
@@ -45,25 +50,25 @@ public class YaviBenchmark {
         public enum ValidatorType {
             BV {
                 @Override
-                void validate(Message message) {
-                    validator.validate(message);
+                void validate(UserForm userForm) {
+                    validator.validate(userForm);
                 }
             }, YAVI {
                 @Override
-                void validate(Message message) {
-                    Message.validator.validate(message);
+                void validate(UserForm userForm) {
+                    UserForm.validator.validate(userForm);
                 }
             };
 
-            abstract void validate(Message message);
+            abstract void validate(UserForm userForm);
         }
 
         @Param
         private ValidatorType validatorType;
 
 
-        public void run(Message message) {
-            validatorType.validate(message);
+        public void run(UserForm userForm) {
+            validatorType.validate(userForm);
         }
     }
 }

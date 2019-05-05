@@ -1,108 +1,132 @@
 ```
-Result "am.ik.yavi.yavibenchmark.YaviBenchmark.bench":
-  3867.676 ±(99.9%) 130.883 ops/ms [Average]
-  (min, avg, max) = (3499.663, 3867.676, 3989.458), stdev = 150.725
-  CI (99.9%): [3736.793, 3998.558] (assumes normal distribution)
+Result "am.ik.yavi.yavibenchmark.YaviBenchmark.simpleInvalid":
+  9372.550 ±(99.9%) 866.412 ops/ms [Average]
+  (min, avg, max) = (9034.937, 9372.550, 9552.686), stdev = 225.004
+  CI (99.9%): [8506.138, 10238.962] (assumes normal distribution)
+
+
+
+Result "am.ik.yavi.yavibenchmark.YaviBenchmark.simpleValid":
+  1285.474 ±(99.9%) 93.541 ops/ms [Average]
+  (min, avg, max) = (1245.289, 1285.474, 1306.467), stdev = 24.292
+  CI (99.9%): [1191.934, 1379.015] (assumes normal distribution)
 
 
 # JMH version: 1.21
 # VM version: JDK 1.8.0_152, Java HotSpot(TM) 64-Bit Server VM, 25.152-b16
 # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/bin/java
-# VM options: -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63005:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
-# Warmup: 10 iterations, 10 s each
-# Measurement: 20 iterations, 10 s each
+# VM options: -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63422:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 5 s each
+# Measurement: 5 iterations, 5 s each
 # Timeout: 10 min per iteration
-# Threads: 50 threads, will synchronize iterations
+# Threads: 8 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
-# Benchmark: am.ik.yavi.yavibenchmark.YaviBenchmark.bench
+# Benchmark: am.ik.yavi.yavibenchmark.YaviBenchmark.simpleValid
 # Parameters: (validatorType = BV)
 
-# Run progress: 0.00% complete, ETA 00:10:00
+# Run progress: 50.00% complete, ETA 00:01:42
 # Fork: 1 of 1
-# Warmup Iteration   1: 2071.731 ops/ms
-# Warmup Iteration   2: 3784.231 ops/ms
-# Warmup Iteration   3: 3788.609 ops/ms
-# Warmup Iteration   4: 3849.492 ops/ms
-# Warmup Iteration   5: 3878.689 ops/ms
-# Warmup Iteration   6: 3832.554 ops/ms
-# Warmup Iteration   7: 3920.488 ops/ms
-# Warmup Iteration   8: 3963.646 ops/ms
-# Warmup Iteration   9: 3939.322 ops/ms
-# Warmup Iteration  10: 3854.816 ops/ms
-Iteration   1: 3917.025 ops/ms
-Iteration   2: 3922.439 ops/ms
-Iteration   3: 3855.086 ops/ms
-Iteration   4: 3532.795 ops/ms
-Iteration   5: 3701.989 ops/ms
-Iteration   6: 3499.663 ops/ms
-Iteration   7: 3643.293 ops/ms
-Iteration   8: 3884.637 ops/ms
-Iteration   9: 3945.698 ops/ms
-Iteration  10: 3970.701 ops/ms
-Iteration  11: 3952.949 ops/ms
-Iteration  12: 3837.384 ops/ms
-Iteration  13: 3976.662 ops/ms
-Iteration  14: 3945.726 ops/ms
-Iteration  15: 3979.594 ops/ms
-Iteration  16: 3899.954 ops/ms
-Iteration  17: 3966.997 ops/ms
-Iteration  18: 3969.491 ops/ms
-Iteration  19: 3961.973 ops/ms
-Iteration  20: 3989.458 ops/ms
+# Warmup Iteration   1: 1074.648 ops/ms
+# Warmup Iteration   2: 1291.523 ops/ms
+# Warmup Iteration   3: 1267.935 ops/ms
+# Warmup Iteration   4: 1294.757 ops/ms
+# Warmup Iteration   5: 1251.371 ops/ms
+Iteration   1: 1306.467 ops/ms
+Iteration   2: 1294.759 ops/ms
+Iteration   3: 1281.219 ops/ms
+Iteration   4: 1299.638 ops/ms
+Iteration   5: 1245.289 ops/ms
 
 # JMH version: 1.21
 # VM version: JDK 1.8.0_152, Java HotSpot(TM) 64-Bit Server VM, 25.152-b16
 # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/bin/java
-# VM options: -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63005:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
-# Warmup: 10 iterations, 10 s each
-# Measurement: 20 iterations, 10 s each
+# VM options: -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63422:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 5 s each
+# Measurement: 5 iterations, 5 s each
 # Timeout: 10 min per iteration
-# Threads: 50 threads, will synchronize iterations
+# Threads: 8 threads, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
-# Benchmark: am.ik.yavi.yavibenchmark.YaviBenchmark.bench
+# Benchmark: am.ik.yavi.yavibenchmark.YaviBenchmark.simpleValid
 # Parameters: (validatorType = YAVI)
 
-# Run progress: 50.00% complete, ETA 00:05:08
+# Run progress: 75.00% complete, ETA 00:00:51
 # Fork: 1 of 1
-# Warmup Iteration   1: 30980.584 ops/ms
-# Warmup Iteration   2: 44231.559 ops/ms
-# Warmup Iteration   3: 43572.940 ops/ms
-# Warmup Iteration   4: 44335.787 ops/ms
-# Warmup Iteration   5: 43941.495 ops/ms
-# Warmup Iteration   6: 44374.245 ops/ms
-# Warmup Iteration   7: 44645.679 ops/ms
-# Warmup Iteration   8: 44437.350 ops/ms
-# Warmup Iteration   9: 44665.146 ops/ms
-# Warmup Iteration  10: 44542.247 ops/ms
-Iteration   1: 44595.399 ops/ms
-Iteration   2: 44633.269 ops/ms
-Iteration   3: 44839.713 ops/ms
-Iteration   4: 44826.982 ops/ms
-Iteration   5: 44702.597 ops/ms
-Iteration   6: 44606.187 ops/ms
-Iteration   7: 44686.729 ops/ms
-Iteration   8: 43812.979 ops/ms
-Iteration   9: 43608.027 ops/ms
-Iteration  10: 44706.472 ops/ms
-Iteration  11: 44573.029 ops/ms
-Iteration  12: 44691.904 ops/ms
-Iteration  13: 44727.785 ops/ms
-Iteration  14: 44587.012 ops/ms
-Iteration  15: 44441.135 ops/ms
-Iteration  16: 42737.586 ops/ms
-Iteration  17: 43585.906 ops/ms
-Iteration  18: 44947.687 ops/ms
-Iteration  19: 44878.178 ops/ms
-Iteration  20: 44743.364 ops/ms
+# Warmup Iteration   1: 1110.079 ops/ms
+# Warmup Iteration   2: 1250.249 ops/ms
+# Warmup Iteration   3: 1223.054 ops/ms
+# Warmup Iteration   4: 1233.853 ops/ms
+# Warmup Iteration   5: 1243.206 ops/ms
+Iteration   1: 1223.001 ops/ms
+Iteration   2: 1217.829 ops/ms
+Iteration   3: 1197.054 ops/ms
+Iteration   4: 1196.359 ops/ms
+Iteration   5: 1241.520 ops/ms
+
+# JMH version: 1.21
+# VM version: JDK 1.8.0_152, Java HotSpot(TM) 64-Bit Server VM, 25.152-b16
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/bin/java
+# VM options: -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63422:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 5 s each
+# Measurement: 5 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: am.ik.yavi.yavibenchmark.YaviBenchmark.simpleInvalid
+# Parameters: (validatorType = BV)
+
+# Run progress: 0.00% complete, ETA 00:03:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 708.490 ops/ms
+# Warmup Iteration   2: 1182.919 ops/ms
+# Warmup Iteration   3: 1204.333 ops/ms
+# Warmup Iteration   4: 1172.978 ops/ms
+# Warmup Iteration   5: 1144.653 ops/ms
+Iteration   1: 1191.387 ops/ms
+Iteration   2: 1176.501 ops/ms
+Iteration   3: 1194.663 ops/ms
+Iteration   4: 1197.689 ops/ms
+Iteration   5: 1195.957 ops/ms
 
 
-Result "am.ik.yavi.yavibenchmark.YaviBenchmark.bench":
-  44446.597 ±(99.9%) 489.557 ops/ms [Average]
-  (min, avg, max) = (42737.586, 44446.597, 44947.687), stdev = 563.775
-  CI (99.9%): [43957.040, 44936.154] (assumes normal distribution)
+Result "am.ik.yavi.yavibenchmark.YaviBenchmark.simpleInvalid":
+  1191.239 ±(99.9%) 32.946 ops/ms [Average]
+  (min, avg, max) = (1176.501, 1191.239, 1197.689), stdev = 8.556
+  CI (99.9%): [1158.293, 1224.186] (assumes normal distribution)
 
 
-# Run complete. Total time: 00:10:18
+# JMH version: 1.21
+# VM version: JDK 1.8.0_152, Java HotSpot(TM) 64-Bit Server VM, 25.152-b16
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/jre/bin/java
+# VM options: -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63422:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 5 s each
+# Measurement: 5 iterations, 5 s each
+# Timeout: 10 min per iteration
+# Threads: 8 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: am.ik.yavi.yavibenchmark.YaviBenchmark.simpleInvalid
+# Parameters: (validatorType = YAVI)
+
+# Run progress: 25.00% complete, ETA 00:02:34
+# Fork: 1 of 1
+# Warmup Iteration   1: 9877.239 ops/ms
+# Warmup Iteration   2: 9388.269 ops/ms
+# Warmup Iteration   3: 9380.177 ops/ms
+# Warmup Iteration   4: 9445.757 ops/ms
+# Warmup Iteration   5: 9413.667 ops/ms
+Iteration   1: 9514.268 ops/ms
+Iteration   2: 9514.349 ops/ms
+Iteration   3: 9552.686 ops/ms
+Iteration   4: 9034.937 ops/ms
+Iteration   5: 9246.511 ops/ms
+
+
+Result "am.ik.yavi.yavibenchmark.YaviBenchmark.simpleValid":
+  1215.153 ±(99.9%) 73.181 ops/ms [Average]
+  (min, avg, max) = (1196.359, 1215.153, 1241.520), stdev = 19.005
+  CI (99.9%): [1141.971, 1288.334] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:03:25
 
 REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
@@ -110,7 +134,9 @@ experiments, perform baseline and negative tests that provide experimental contr
 the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
 Do not assume the numbers tell you what you want them to tell.
 
-Benchmark            (validatorType)   Mode  Cnt      Score     Error   Units
-YaviBenchmark.bench               BV  thrpt   20   3867.676 ± 130.883  ops/ms
-YaviBenchmark.bench             YAVI  thrpt   20  44446.597 ± 489.557  ops/ms
+Benchmark                    (validatorType)   Mode  Cnt     Score     Error   Units
+YaviBenchmark.simpleInvalid               BV  thrpt    5  1191.239 ±  32.946  ops/ms
+YaviBenchmark.simpleInvalid             YAVI  thrpt    5  9372.550 ± 866.412  ops/ms
+YaviBenchmark.simpleValid                 BV  thrpt    5  1285.474 ±  93.541  ops/ms
+YaviBenchmark.simpleValid               YAVI  thrpt    5  1215.153 ±  73.181  ops/ms
 ```
