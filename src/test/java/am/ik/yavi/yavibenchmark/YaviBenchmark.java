@@ -22,8 +22,8 @@ import java.util.concurrent.TimeUnit;
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @Fork(value = 1)
 @Threads(8)
-@Warmup(iterations = 3, time = 3)
-@Measurement(iterations = 3, time = 3)
+@Warmup(iterations = 5, time = 5)
+@Measurement(iterations = 5, time = 5)
 @Microbenchmark
 public class YaviBenchmark {
 

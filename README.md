@@ -1,9 +1,9 @@
 ```
-Benchmark                    (validatorType)   Mode  Cnt      Score      Error   Units
-YaviBenchmark.simpleEmpty                 BV  thrpt    3   1366.159 ±  472.005  ops/ms
-YaviBenchmark.simpleEmpty               YAVI  thrpt    3  10816.272 ±  774.494  ops/ms
-YaviBenchmark.simpleInvalid               BV  thrpt    3   1048.995 ±   60.356  ops/ms
-YaviBenchmark.simpleInvalid             YAVI  thrpt    3   5171.530 ± 1967.132  ops/ms
-YaviBenchmark.simpleValid                 BV  thrpt    3   3210.155 ± 1263.046  ops/ms
-YaviBenchmark.simpleValid               YAVI  thrpt    3  18008.313 ± 7446.729  ops/ms
+Benchmark                    (validatorType)   Mode  Cnt      Score     Error   Units
+YaviBenchmark.simpleEmpty                 BV  thrpt    5   1179.330 ± 536.610  ops/ms
+YaviBenchmark.simpleEmpty               YAVI  thrpt    5   9683.257 ± 918.839  ops/ms
+YaviBenchmark.simpleInvalid               BV  thrpt    5   1014.283 ±  90.728  ops/ms
+YaviBenchmark.simpleInvalid             YAVI  thrpt    5   3956.735 ± 469.203  ops/ms
+YaviBenchmark.simpleValid                 BV  thrpt    5   3090.288 ± 438.312  ops/ms
+YaviBenchmark.simpleValid               YAVI  thrpt    5  11336.015 ± 832.878  ops/ms
 ```
