@@ -3,7 +3,6 @@ package am.ik.yavi.yavibenchmark;
 import am.ik.yavi.builder.ValidatorBuilder;
 import am.ik.yavi.core.Validator;
 
-import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -29,7 +28,6 @@ public class UserForm implements Serializable {
 
     @NotNull
     @Size(min = 1, max = 50)
-    @Email
     private String email;
 
     @NotNull
@@ -63,7 +61,7 @@ public class UserForm implements Serializable {
 
     public static Validator<UserForm> validator = ValidatorBuilder.of(UserForm.class)
         .constraint(UserForm::getName, "name", c -> c.notNull().greaterThan(1).lessThan(20))
-        .constraint(UserForm::getEmail, "email", c -> c.notNull().greaterThan(1).lessThan(50).email())
+        .constraint(UserForm::getEmail, "email", c -> c.notNull().greaterThan(1).lessThan(50))
         .constraint(UserForm::getAge, "age", c -> c.notNull().greaterThan(0).lessThan(200))
         .build();
 }
