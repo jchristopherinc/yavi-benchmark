@@ -27,14 +27,18 @@ import java.util.concurrent.TimeUnit;
 @Microbenchmark
 public class YaviBenchmark {
 
+    static UserForm simpleValidData = new UserForm("John Doe", "john@example.com", 30);
+
+    static UserForm simpleInvalidData = new UserForm("", "", 0);
+
     @Benchmark
     public void simpleValid(MainState state) throws Exception {
-        state.run(new UserForm("John Doe", "john@example.com", 30));
+        state.run(simpleValidData);
     }
 
     @Benchmark
     public void simpleInvalid(MainState state) throws Exception {
-        state.run(new UserForm("", "", 0));
+        state.run(simpleInvalidData);
     }
 
     @State(Scope.Benchmark)
