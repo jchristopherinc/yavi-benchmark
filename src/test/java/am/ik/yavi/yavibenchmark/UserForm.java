@@ -2,11 +2,11 @@ package am.ik.yavi.yavibenchmark;
 
 import am.ik.yavi.builder.ValidatorBuilder;
 import am.ik.yavi.core.Validator;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import java.io.Serializable;
 
 public class UserForm implements Serializable {
